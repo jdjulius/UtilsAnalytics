@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import statistics as stats
 
 def graphBarrPlot(df, varCualitativa):
 
@@ -56,3 +56,12 @@ def graphHistDensity(df, varCualitativa):
 
     plt.tight_layout()
     plt.show()
+
+def moda(x):
+    return stats.mode(x)
+
+def mean(x):
+    return stats.mean(x)
+
+def median(x):
+    return stats.median(x)
